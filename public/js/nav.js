@@ -65,6 +65,7 @@ $mobileIcon.on('click', function() {
   }
 });
 
-$('body').imagesLoaded(function() {
-  $('img').fadeIn();
+var imgLoad = imagesLoaded("body");
+imgLoad.on('progress', function( instance, image ) {
+    $(image.img).fadeIn();
 });
