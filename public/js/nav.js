@@ -65,16 +65,6 @@ $mobileIcon.on('click', function() {
   }
 });
 
-$('body').imagesLoaded()
-  .always( function( instance ) {
-    console.log('All images loaded');
-  })
-  .done( function( instance ) {
-    console.log('All images successfully loaded');
-  })
-  .fail( function() {
-    console.log('all images loaded, at least one is broken');
-  })
-  .progress( function( instance, image ) {
-    
-  });
+$('body').imagesLoaded(function() {
+  $('img').fadeIn();
+});

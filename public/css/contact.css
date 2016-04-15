@@ -27,6 +27,9 @@
   border-bottom: 3px solid #FF8343;
   padding-bottom: 10px; }
 
+img {
+  display: none; }
+
 * {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
