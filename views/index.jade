@@ -1,0 +1,85 @@
+extends layout
+
+block content
+	header.hero
+		.title-container
+			h1 The digital bulletin board for campus events
+			form
+				input(type='text' placeholder='Email address').email
+				input(type='submit' value='Get updates').btn.btn-primary.btn-lg 
+		.device
+			img(src='assets/iphonegold-2x.png' alt='Rose Gold iPhone').device-img
+			img(src='assets/Home.jpg' alt='Screenshot').device-screen
+	.wrapper
+		.affiliates
+			ul
+				li.affiliate
+					img(src='assets/Northwestern_University_Seal.png')
+		.howitworks#how-it-works
+			h3.section-header How it works
+
+			.explore.feature
+				h4 Explore what's happening on campus
+				p blah blah
+				ul.screens
+					li.screen
+						img(src='assets/Home.jpg' alt='Home')
+					li.screen
+						img(src='assets/Explore.jpg' alt='Explore')
+					li.screen
+						img(src='assets/Event.jpg' alt='Event')
+			.tailor.feature
+				h4 Tailor your feed
+				p blah blah
+				ul.screens
+					li.screen
+						img(src='assets/Filters.jpg' alt='Filters')
+					li.screen
+						img(src='assets/Organization_View.jpg' alt='Organization')
+			.create.feature
+				h4 Create events that people want to attend
+				p blah blah
+				ul.screens
+					li.screen
+						img(src='assets/EventCreation_1.jpg' alt='Event Creation 1')
+					li.screen
+						img(src='assets/EventCreation_2.jpg' alt='Event Creation 2')
+					li.screen
+						img(src='assets/EventCreation_3.jpg' alt='Event Creation 3')
+		.team#team
+			h3.section-header Our Team
+			ul.members
+				li.member
+					.mask
+						img(src='assets/drakemumford.jpg' alt='Drake Mumford')
+					h4 Drake Mumford
+					h6 Co-Founder
+					p Hi, I’m Drake. I like fast cars, photography, sports, and food. Also, my favorite color is blue.
+				li.member
+					.mask
+						img(src='assets/maxweidell.jpg' alt='Max Weidell')
+					h4 Max Weidell
+					h6 Co-Founder, COO, CMO
+					p I'm Max. I love jazz, playing string instruments, reading, and I am fascinated by trains.
+				li.member
+					.mask
+						img(src='assets/brandonfujii.png' alt='Brandon Fujii')
+					h4 Brandon Fujii
+					h6 Web Dev &amp; Designer
+					p Northwestern CS and Usercentric. I like skateboarding, Soylent, and dank memes. @brandonfujii
+				li.member
+					.mask
+						img(src='assets/johnfranklin.jpg' alt='John Franklin')
+					h4 John Franklin
+					h6 Software Developer
+					p Hello, hello. I'm John. Gypsy jazz, cockapoos, and free food get me going. Settlers of Catan champ.
+				li.member
+					.mask
+						img(src='assets/navingopaul.jpg' alt='Navin Gopaul')
+					h4 Navin Gopaul
+					h6 Mobile Developer
+					p Northwestern CS student, NYC Native, and Usercentric dev. I'm a huge fan of politics, boxing, and vintage currency.
+					
+
+
+
