@@ -65,7 +65,7 @@ $mobileIcon.on('click', function() {
   }
 });
 
-var imgLoad = imagesLoaded("body");
-imgLoad.on('progress', function( instance, image ) {
+var imgOnLoad = imagesLoaded('body');
+imgOnLoad.on('progress', function( instance, image ) {
     $(image.img).fadeIn();
 });

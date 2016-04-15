@@ -40,5 +40,25 @@ gulp.task('start', function () {
   })
 })
 
+
+// Minify js files
+gulp.task('srccompress', function() {
+  return gulp.src('public/js/src/*.js')
+    .pipe(concat('concat.js'))
+    .pipe(gulp.dest('dist'))
+    .pipe(rename('all.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('public/dist'));
+});
+
+gulp.task('depcompress', function() {
+  return gulp.src('public/js/dependencies/*.js')
+    .pipe(concat('concat.js'))
+    .pipe(gulp.dest('dist'))
+    .pipe(rename('jsd.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('public/dist'));
+});
+
 // Default Task
-gulp.task('default', ['lint', 'sass', 'watch', 'start']);
+gulp.task('default', ['lint', 'sass', 'watch', 'start', 'srccompress', 'depcompress']);

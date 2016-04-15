@@ -30,6 +30,9 @@
 img {
   display: none; }
 
+li {
+  list-style: none; }
+
 * {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
