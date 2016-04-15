@@ -24,6 +24,11 @@ app.use(bodyParser.urlencoded({
 app.get('/', indexController.index);
 app.get('/contact', contactController.form);
 
+// Contact form
+app.post('/contact', function (req, res) {
+  contactController.sendMail(req, res);
+});
+
 
 
 // SERVER

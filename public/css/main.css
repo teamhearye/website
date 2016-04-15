@@ -45,22 +45,27 @@ body {
     body nav .nav-container {
       padding: 20px; }
       body nav .nav-container .logo {
-        font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
-        font-weight: 700;
-        font-size: 1.5em;
-        color: #fff;
         text-transform: uppercase;
         letter-spacing: 2px;
         height: 30px;
         width: auto;
         display: inline-block; }
-        body nav .nav-container .logo img {
-          height: 100%;
-          width: auto; }
-        body nav .nav-container .logo span {
-          margin-left: 10px;
-          position: relative;
-          top: 2px; }
+        body nav .nav-container .logo a {
+          height: 30px;
+          font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+          font-weight: 700;
+          font-size: 1.5em;
+          color: #fff;
+          display: inline-block; }
+          body nav .nav-container .logo a:hover {
+            text-decoration: none; }
+          body nav .nav-container .logo a img {
+            height: 100%;
+            width: auto; }
+          body nav .nav-container .logo a span {
+            margin-left: 10px;
+            position: relative;
+            top: 2px; }
       body nav .nav-container .nav-items {
         float: right;
         padding-top: 7px; }
@@ -83,7 +88,7 @@ body {
   body nav.active {
     background: #fff;
     border-bottom: 1px solid #ddd; }
-    body nav.active .nav-container .logo {
+    body nav.active .nav-container .logo a {
       color: #FF9966; }
     body nav.active .nav-container .nav-items {
       padding-top: 0; }
@@ -301,6 +306,7 @@ body {
         background-color: #2981ea;
         border-color: #2981ea; }
   body footer {
+    border-top: 1px solid #ddd;
     background-color: #fff;
     padding-top: 30px;
     padding-bottom: 30px; }

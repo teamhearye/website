@@ -15,6 +15,17 @@ $coolgrey: #97A1A2;
 	transition: ease-in-out 0.3s;
 }
 
+@mixin input_style() {
+	@include font($mainfont, 700, 1em, #555555);
+	height: 44px;
+	width: 250px;
+	margin-right: 10px;
+	border: none;
+	border-radius: 4.6875rem;
+	padding: 10px 20px;
+	outline: none;
+}
+
 @mixin hearye_button() {
 	@include font($mainfont, 700, 1em, #fff);
 	border: 3px #408fec solid;
@@ -68,23 +79,31 @@ body {
 		.nav-container {
 			padding: 20px;
 			.logo {
-				@include font($mainfont, 700, 1.5em, #fff);
 				text-transform: uppercase;
 				letter-spacing: 2px;
 				height: 30px;
 				width: auto;
 				display: inline-block;
 
+				a {
+					height: 30px;
+					@include font($mainfont, 700, 1.5em, #fff);
+					display: inline-block;
 
-				img {
-					height: 100%;
-					width: auto;
-				}
+					&:hover {
+						text-decoration: none;
+					}
 
-				span {
-					margin-left: 10px;
-					position: relative;
-					top: 2px;
+					img {
+						height: 100%;
+						width: auto;
+					}
+
+					span {
+						margin-left: 10px;
+						position: relative;
+						top: 2px;
+					}
 				}
 			}
 
@@ -123,7 +142,9 @@ body {
 
 		.nav-container {
 			.logo {
-				color: #FF9966;
+				a {
+					color: #FF9966;
+				}
 			}
 
 			.nav-items {
@@ -236,14 +257,7 @@ body {
 				
 
 				input.email {
-					@include font($mainfont, 700, 1em, #555555);
-					height: 44px;
-					width: 250px;
-					margin-right: 10px;
-					border: none;
-					border-radius: 4.6875rem;
-					padding: 10px 20px;
-					outline: none;
+					@include input_style();
 				}
 
 				.btn.btn-primary {
@@ -403,6 +417,7 @@ body {
 	}
 
 	footer {
+		border-top: 1px solid #ddd;
 		background-color: #fff;
 		padding-top: 30px;
 		padding-bottom: 30px;
