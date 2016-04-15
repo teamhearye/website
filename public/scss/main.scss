@@ -1,4 +1,5 @@
 $mainfont: 'Proxima Nova', Helvetica, Arial, sans-serif;
+$coolgrey: #97A1A2;
 
 @mixin font($type: $mainfont, $weight: 400, $size: 1em, $color: #555459) {
 	font-family: $type;
@@ -109,6 +110,10 @@ body {
 					}
 				}
 			}
+
+			.mobile-icon, .mobile-items {
+				display: none;
+			}
 		}
 	}
 
@@ -147,6 +152,58 @@ body {
 					}
 				}
 			}
+
+			.mobile-icon { 
+				color: #FF9966 !important;
+				.mobile-items {
+					display: none;
+				}
+			}
+		}
+	}
+	
+	nav.mobile {
+		.nav-container {
+
+			.not-mobile {
+				display: none;
+			}
+
+			.mobile-icon {
+				cursor: pointer;
+				display: block;
+				float: right;
+				color: #fff;
+				font-size: 1.5em;
+
+				.mobile-items {
+					width: 100%;
+					display: none;
+					position: absolute;
+					left: 0;
+					top: 71px;
+					height: 100vh;
+					background-color: rgba(236,128,89,0.95);
+
+					.mobile-item {
+						cursor: pointer;
+
+						a {
+							text-align: center;
+							padding: 20px;
+							display: block;
+							@include font($mainfont, 700, 0.7em, #fff);
+
+							&:hover {
+								text-decoration: none;
+								background-color: darken(#EC8059, 2%);
+							}
+						}
+					}
+				}
+			}
+
+			
 		}
 	}
 
@@ -154,6 +211,7 @@ body {
 		overflow: hidden;
 		background: linear-gradient(135deg, #ec8f5d, #EE514E);
 		height: 700px;
+		position: relative;
 
 		.title-container {
 			
@@ -175,8 +233,7 @@ body {
 				text-align: center;
 				top: 50%;
 				position: relative;
-				left: 50%;
-				transform: translateX(-50%);
+				
 
 				input.email {
 					@include font($mainfont, 700, 1em, #555555);
@@ -262,6 +319,13 @@ body {
 				padding-bottom: 25px;
 				text-align: center;
 
+				.desc-wrapper {
+					max-width: 600px;
+					width: 90%;
+					margin: 0 auto;
+
+				}
+
 				.screens {
 					.screen {
 						display: inline-block;
@@ -304,8 +368,6 @@ body {
 					max-width: 300px;
 					margin: 10px;
 					display: inline-block;
-					border: 1px solid #ddd;
-					border-radius: 3px;
 					padding: 20px;
 
 					.mask {
@@ -407,10 +469,43 @@ body {
 	}
 }
 
+@media screen and (max-width: 520px) {
+	body {
+		.wrapper {
+			.howitworks {
+				.feature {
+					.screens {
+						.screen {
+							width: 200px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	body {
+		.wrapper {
+			.howitworks {
+				.feature {
+					.screens {
+						.screen {
+							width: 150px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 430px) {
 	body {
 		header.hero {
 			height: 100vh;
+			min-height: 600px;
 			.title-container {
 				text-align: center;
 
@@ -439,18 +534,6 @@ body {
 					top: 74px;
 				}
 
-			}
-		}
-
-		.wrapper {
-			.howitworks {
-				.feature {
-					.screens {
-						.screen {
-							margin-right: 0;
-						}
-					}
-				}
 			}
 		}
 	}

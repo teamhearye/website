@@ -78,6 +78,8 @@ body {
             body nav .nav-container .nav-items .nav-item a:hover {
               text-decoration: none;
               border-bottom: 2px solid #fff; }
+      body nav .nav-container .mobile-icon, body nav .nav-container .mobile-items {
+        display: none; }
   body nav.active {
     background: #fff;
     border-bottom: 1px solid #ddd; }
@@ -111,10 +113,44 @@ body {
           color: #fff; }
           body nav.active .nav-container .nav-items .nav-item.nav-contact a:hover {
             border-bottom: none; }
+    body nav.active .nav-container .mobile-icon {
+      color: #FF9966 !important; }
+      body nav.active .nav-container .mobile-icon .mobile-items {
+        display: none; }
+  body nav.mobile .nav-container .not-mobile {
+    display: none; }
+  body nav.mobile .nav-container .mobile-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    color: #fff;
+    font-size: 1.5em; }
+    body nav.mobile .nav-container .mobile-icon .mobile-items {
+      width: 100%;
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 71px;
+      height: 100vh;
+      background-color: rgba(236, 128, 89, 0.95); }
+      body nav.mobile .nav-container .mobile-icon .mobile-items .mobile-item {
+        cursor: pointer; }
+        body nav.mobile .nav-container .mobile-icon .mobile-items .mobile-item a {
+          text-align: center;
+          padding: 20px;
+          display: block;
+          font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+          font-weight: 700;
+          font-size: 0.7em;
+          color: #fff; }
+          body nav.mobile .nav-container .mobile-icon .mobile-items .mobile-item a:hover {
+            text-decoration: none;
+            background-color: #eb7950; }
   body header.hero {
     overflow: hidden;
     background: linear-gradient(135deg, #ec8f5d, #EE514E);
-    height: 700px; }
+    height: 700px;
+    position: relative; }
     body header.hero .title-container {
       position: absolute;
       max-width: 400px;
@@ -132,9 +168,7 @@ body {
       body header.hero .title-container form {
         text-align: center;
         top: 50%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%); }
+        position: relative; }
         body header.hero .title-container form input.email {
           font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
           font-weight: 700;
@@ -204,6 +238,10 @@ body {
       padding-top: 25px;
       padding-bottom: 25px;
       text-align: center; }
+      body .wrapper .howitworks .feature .desc-wrapper {
+        max-width: 600px;
+        width: 90%;
+        margin: 0 auto; }
       body .wrapper .howitworks .feature .screens .screen {
         display: inline-block;
         width: 250px;
@@ -232,8 +270,6 @@ body {
         max-width: 300px;
         margin: 10px;
         display: inline-block;
-        border: 1px solid #ddd;
-        border-radius: 3px;
         padding: 20px; }
         body .wrapper .team .members .member .mask {
           margin: 0 auto;
@@ -316,9 +352,18 @@ body {
   body header.hero .title-container {
     width: 90%; } }
 
+@media screen and (max-width: 520px) {
+  body .wrapper .howitworks .feature .screens .screen {
+    width: 200px; } }
+
+@media screen and (max-width: 450px) {
+  body .wrapper .howitworks .feature .screens .screen {
+    width: 150px; } }
+
 @media screen and (max-width: 430px) {
   body header.hero {
-    height: 100vh; }
+    height: 100vh;
+    min-height: 600px; }
     body header.hero .title-container {
       text-align: center; }
       body header.hero .title-container h1 {
@@ -334,6 +379,4 @@ body {
       body header.hero .device img.device-screen {
         width: 259px;
         left: 20px;
-        top: 74px; }
-  body .wrapper .howitworks .feature .screens .screen {
-    margin-right: 0; } }
+        top: 74px; } }

@@ -3,10 +3,19 @@ nav#main-nav
 		.logo.noselect
 			img(src='assets/hearyelogo_white.png' alt='Logo')
 			span HearYe
-		ul.nav-items
-			li.nav-item(data-nav='how-it-works')
+		ul.nav-items.not-mobile
+			li.nav-item(data-nav='how-it-works').item
 				a How it works
-			li.nav-item(data-nav='team')
+			li.nav-item(data-nav='team').item
 				a Our Team
-			li.nav-item(data-nav='contact').nav-contact
+			li.nav-item(data-nav='contact').nav-contact.item
 				a Contact Us
+		.mobile-icon
+			i.fa.fa-bars
+			ul.mobile-items
+				li.mobile-item(data-nav='how-it-works').item
+					a How it works
+				li.mobile-item(data-nav='team').item
+					a Our Team
+				li.mobile-item(data-nav='contact').nav-contact.item
+					a Contact Us
