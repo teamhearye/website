@@ -35,7 +35,9 @@ li {
 
 * {
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased; }
+  font-smoothing: antialiased;
+  margin: 0;
+  padding: 0; }
 
 body {
   font-family: "Proxima Nova", Helvetica, Arial, sans-serif; }
@@ -360,6 +362,12 @@ body {
     border-top: 1px solid #f2f2f2;
     padding-top: 30px; }
 
+@media screen and (max-width: 789px) {
+  body .wrapper .howitworks .feature.explore .screens .screen:nth-child(2) {
+    margin-right: 0; }
+  body .wrapper .howitworks .feature.create .screens .screen:nth-child(2) {
+    margin-right: 0; } }
+
 @media screen and (max-width: 751px) {
   body header.hero .title-container {
     width: 90%; } }
@@ -398,6 +406,8 @@ body nav .nav-container .nav-items .nav-item[data-nav='how-it-works'], body nav 
 
 body nav.mobile .nav-container .mobile-icon .mobile-items {
   background: #BF7359; }
+  body nav.mobile .nav-container .mobile-icon .mobile-items .mobile-item[data-nav='how-it-works'], body nav.mobile .nav-container .mobile-icon .mobile-items .mobile-item[data-nav='team'] {
+    display: none; }
   body nav.mobile .nav-container .mobile-icon .mobile-items .mobile-item a:hover {
     background: #bc6d52; }
 

@@ -73,6 +73,8 @@ li {
 * {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	margin: 0;
+	padding:0;
 }
 
 body {
@@ -481,6 +483,29 @@ body {
 	}
 }
 
+@media screen and  (max-width: 789px) {
+	body {
+		.wrapper {
+			.howitworks {
+				.feature.explore {
+					.screens {
+						.screen:nth-child(2) {
+							margin-right: 0;
+						}
+					}
+				}
+
+				.feature.create {
+					.screens {
+						.screen:nth-child(2) {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 751px) {
 	body {
