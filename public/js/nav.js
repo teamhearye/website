@@ -19,7 +19,6 @@ headroom.init();
 
 $navItem.on('click', function() {
 	var jump_to = '#' + $(this).data('nav');
-	console.log(jump_to);
 
 	$(jump_to).velocity("scroll", { duration: 600 });
 
@@ -36,3 +35,17 @@ $(window).on('scroll', function() {
 		$logo.attr('src', 'assets/hearyelogo_white.png');
 	}
 });
+
+$('body').imagesLoaded()
+  .always( function( instance ) {
+    console.log('All images loaded');
+  })
+  .done( function( instance ) {
+    console.log('All images successfully loaded');
+  })
+  .fail( function() {
+    console.log('all images loaded, at least one is broken');
+  })
+  .progress( function( instance, image ) {
+    
+  });

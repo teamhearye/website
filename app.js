@@ -13,7 +13,7 @@ app.set('view engine', 'jade');
 
 // Get clientside assets
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(favicon(path.join(__dirname, 'public', 'assets/hearyelogo_white.png'))); 
+app.use(favicon(path.join(__dirname, 'public', 'assets/hearyelogo_cream.png'))); 
 
 app.use(bodyParser.urlencoded({
   extended: true
