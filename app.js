@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 // CONTROLLERS
 var indexController = require('./controllers/index');
+var contactController = require('./controllers/contact')
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -21,6 +22,8 @@ app.use(bodyParser.urlencoded({
 
 // ROUTES
 app.get('/', indexController.index);
+app.get('/contact', contactController.form);
+
 
 
 // SERVER
