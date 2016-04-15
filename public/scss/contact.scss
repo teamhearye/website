@@ -2,20 +2,50 @@
 @import 'main';
 
 body {
+
+	nav {
+		.nav-container {
+			.nav-items {
+				.nav-item[data-nav='how-it-works'], .nav-item[data-nav='team'] {
+					display: none;
+				}
+			}
+		}
+	}
+	nav.mobile {
+		.nav-container {
+			.mobile-icon {
+				.mobile-items {
+					background: #BF7359;
+
+					.mobile-item {
+
+						a {
+							&:hover {
+								background: darken(#BF7359, 2%);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	.bg {
 		position: relative;
 		height: 400px;
 
 		h1 {
+			z-index: 10;
 			position: absolute;
 			top: 45%;
 			left: 50%;
-			width: 90%;
+			display: inline-block;
 			text-align: center;
 			transform: translate(-50%, -50%);
 			@include font($mainfont, 700, 2em, #fff);
 			padding-bottom: 10px;
 			line-height: 1.25em;
+			border-bottom: 4px solid #fff;
 		}
 
 		.overlay {

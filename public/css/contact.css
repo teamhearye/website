@@ -354,7 +354,7 @@ body {
     color: #97A1A2;
     margin-left: 30px;
     margin-right: 30px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #f2f2f2;
     padding-top: 30px; }
 
 @media screen and (max-width: 751px) {
@@ -390,14 +390,23 @@ body {
         left: 20px;
         top: 74px; } }
 
+body nav .nav-container .nav-items .nav-item[data-nav='how-it-works'], body nav .nav-container .nav-items .nav-item[data-nav='team'] {
+  display: none; }
+
+body nav.mobile .nav-container .mobile-icon .mobile-items {
+  background: #BF7359; }
+  body nav.mobile .nav-container .mobile-icon .mobile-items .mobile-item a:hover {
+    background: #bc6d52; }
+
 body .bg {
   position: relative;
   height: 400px; }
   body .bg h1 {
+    z-index: 10;
     position: absolute;
     top: 45%;
     left: 50%;
-    width: 90%;
+    display: inline-block;
     text-align: center;
     transform: translate(-50%, -50%);
     font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
@@ -405,7 +414,8 @@ body .bg {
     font-size: 2em;
     color: #fff;
     padding-bottom: 10px;
-    line-height: 1.25em; }
+    line-height: 1.25em;
+    border-bottom: 4px solid #fff; }
   body .bg .overlay {
     top: 0;
     bottom: 0;
