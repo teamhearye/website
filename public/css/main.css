@@ -300,6 +300,8 @@ body {
           body .wrapper .team .members .member .mask img {
             width: 100%;
             height: auto; }
+      body .wrapper .team .members .member.wide .mask img {
+        height: 100%; }
   body .contact {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;

@@ -79,12 +79,16 @@ $member.on('mouseover', function() {
 
   if (gifname) {
 
+    if (gifname.indexOf('wide')) {
+      $(this).addClass('wide');
+    }
     memberImg.attr('src', 'assets/' + gifname + '.gif');
-    
+
   }
 });
 
 $member.on('mouseleave', function() {
+  $(this).removeClass('wide');
   var memberImg = $(this).find('.mask img');
   var name = $(this).data('name');
   memberImg.attr('src', 'assets/' + name + '.jpg');
