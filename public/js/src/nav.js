@@ -69,3 +69,18 @@ var imgOnLoad = imagesLoaded('body');
 imgOnLoad.on('progress', function( instance, image ) {
     $(image.img).fadeIn();
 });
+
+
+var $member = $('.member');
+
+$member.on('mouseover', function() {
+  var memberImg = $(this).find('.mask img');
+  memberImg.attr('src', 'assets/dabasaur.gif');
+});
+
+$member.on('mouseleave', function() {
+  var memberImg = $(this).find('.mask img');
+  var name = $(this).data('name');
+  memberImg.attr('src', 'assets/' + name + '.jpg');
+});
+
