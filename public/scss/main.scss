@@ -312,19 +312,24 @@ body {
 			border-top: 1px solid #ddd;
 			border-bottom: 1px solid #ddd;
 			background-color: #fff;
-			padding-top: 30px;
-			padding-bottom: 30px;
+			padding-top: 10px;
+			padding-bottom: 10px;
 
 			ul {
 				.affiliate {
-					height: 100px;
+					display: inline-block;
+					height: 75px;
 					width: auto;
-					margin: 20px;
+					margin: 30px;
 
 					img {
 						height: 100%;
 						width: auto;
 					}
+				}
+
+				.affiliate.long {
+					height: 40px;
 				}
 			}
 

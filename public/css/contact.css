@@ -232,15 +232,18 @@ body {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     background-color: #fff;
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-top: 10px;
+    padding-bottom: 10px; }
     body .wrapper .affiliates ul .affiliate {
-      height: 100px;
+      display: inline-block;
+      height: 75px;
       width: auto;
-      margin: 20px; }
+      margin: 30px; }
       body .wrapper .affiliates ul .affiliate img {
         height: 100%;
         width: auto; }
+    body .wrapper .affiliates ul .affiliate.long {
+      height: 40px; }
   body .wrapper .howitworks {
     padding-top: 30px;
     padding-bottom: 30px;
