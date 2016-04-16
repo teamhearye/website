@@ -75,7 +75,13 @@ var $member = $('.member');
 
 $member.on('mouseover', function() {
   var memberImg = $(this).find('.mask img');
-  memberImg.attr('src', 'assets/dabasaur.gif');
+  var gifname = $(this).data('gif');
+
+  if (gifname) {
+
+    memberImg.attr('src', 'assets/' + gifname + '.gif');
+    
+  }
 });
 
 $member.on('mouseleave', function() {
