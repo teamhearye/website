@@ -71,26 +71,26 @@ imgOnLoad.on('progress', function( instance, image ) {
 });
 
 
-var $member = $('.member');
+// var $member = $('.member');
 
-$member.on('mouseover', function() {
-  var memberImg = $(this).find('.mask img');
-  var gifname = $(this).data('gif');
+// $member.on('mouseover', function() {
+//   var memberImg = $(this).find('.mask img');
+//   var gifname = $(this).data('gif');
 
-  if (gifname) {
+//   if (gifname) {
 
-    if (gifname.indexOf('wide')) {
-      $(this).addClass('wide');
-    }
-    memberImg.attr('src', 'assets/' + gifname + '.gif');
+//     if (gifname.indexOf('wide')) {
+//       $(this).addClass('wide');
+//     }
+//     memberImg.attr('src', 'assets/' + gifname + '.gif');
 
-  }
-});
+//   }
+// });
 
-$member.on('mouseleave', function() {
-  $(this).removeClass('wide');
-  var memberImg = $(this).find('.mask img');
-  var name = $(this).data('name');
-  memberImg.attr('src', 'assets/' + name + '.jpg');
-});
+// $member.on('mouseleave', function() {
+//   $(this).removeClass('wide');
+//   var memberImg = $(this).find('.mask img');
+//   var name = $(this).data('name');
+//   memberImg.attr('src', 'assets/' + name + '.jpg');
+// });
 

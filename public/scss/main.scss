@@ -404,27 +404,41 @@ body {
 					display: inline-block;
 					padding: 20px;
 
+					&:hover .mask .reg {
+						opacity: 0;
+					}
+
 					.mask {
+						z-index: 11;
+						position: relative;
 						margin: 0 auto;
 						height: 100px;
 						width: 100px;
 						overflow: hidden;
 						border-radius: 100%;
 
+
 						img {
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							left: 0;
+							right: 0;
 							width: 100%;
 							height: auto;
 						}
-					}
-				}
 
-				.member.wide {
-					.mask {
-						img {
+						img.reg {
+							z-index: 10;
+						}
+
+						img.wide {
+							width: 120%;
 							height: 100%;
 						}
 					}
 				}
+
 			}
 
 		}
