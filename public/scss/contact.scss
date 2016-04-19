@@ -44,6 +44,9 @@ body {
 			left: 50%;
 			display: inline-block;
 			text-align: center;
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
 			@include font($mainfont, 700, 2em, #fff);
 			padding-bottom: 10px;

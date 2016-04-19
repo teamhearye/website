@@ -23,6 +23,7 @@ app.use(bodyParser.urlencoded({
 // ROUTES
 app.get('/', indexController.index);
 app.get('/contact', contactController.form);
+app.get('/thankyou', contactController.thankyou);
 
 // Contact form
 app.post('/contact', function (req, res) {

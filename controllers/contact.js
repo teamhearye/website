@@ -6,6 +6,12 @@ exports.form = function(req, res) {
   });
 };
 
+exports.thankyou = function(req, res) {
+  res.render('thankyou', {
+    title: 'Thanks for contacting us!'
+  });
+};
+
 /**
  * Send an email when the contact from is submitted
  */
@@ -32,3 +38,4 @@ exports.sendMail = function(req, res) {
       res.redirect('/thankyou');
     }
 };
+

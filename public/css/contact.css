@@ -343,6 +343,49 @@ body {
       body .contact a.btn.btn-primary.btn-lg:hover {
         background-color: #2981ea;
         border-color: #2981ea; }
+  body #thankyou {
+    min-height: 500px;
+    width: 100%;
+    background-color: #FF9966;
+    position: relative; }
+    body #thankyou h2, body #thankyou h4 {
+      color: #fff;
+      margin: 0; }
+    body #thankyou .message {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      body #thankyou .message .mask {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        margin: 10px auto; }
+        body #thankyou .message .mask img {
+          width: 100%;
+          height: 100%; }
+      body #thankyou .message h2 {
+        margin-bottom: 5px; }
+      body #thankyou .message p a {
+        margin-top: 15px;
+        padding: 5px 10px;
+        display: inline-block;
+        font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 1em;
+        color: #fff;
+        border: 3px #408fec solid;
+        background-color: #408fec;
+        border-radius: 4.6875rem;
+        position: relative;
+        outline: none; }
+        body #thankyou .message p a:hover {
+          background-color: #2981ea;
+          border-color: #2981ea; }
   body footer {
     border-top: 1px solid #ddd;
     background-color: #fff;
@@ -451,6 +494,9 @@ body .bg {
     left: 50%;
     display: inline-block;
     text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
     font-weight: 700;
