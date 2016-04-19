@@ -173,6 +173,9 @@ body {
       max-width: 400px;
       left: 50%;
       top: 15%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
       transform: translateX(-50%); }
       body header.hero .title-container h1 {
         text-align: center;
@@ -219,8 +222,14 @@ body {
       width: 361px;
       height: auto;
       margin: 0 auto;
+      -webkit-transform: translateY(42%);
+      -moz-transform: translateY(42%);
+      -o-transform: translateY(42%);
       transform: translateY(42%); }
       body header.hero .device:hover {
+        -webkit-transform: translateY(39%);
+        -moz-transform: translateY(39%);
+        -o-transform: translateY(39%);
         transform: translateY(39%); }
       body header.hero .device img.device-img {
         width: 100%;
