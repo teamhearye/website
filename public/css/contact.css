@@ -450,7 +450,7 @@ body {
     width: 200px; } }
 
 @media screen and (max-width: 480px) {
-  [data-sr] {
+  .explore, .tailor, .create {
     -webkit-tranform: none !important;
     transform: none !important; } }
 
