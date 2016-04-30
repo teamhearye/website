@@ -114,7 +114,12 @@ body {
 						width: auto;
 					}
 
-					span {
+					h1 {
+						font-family: $mainfont;
+						font-weight: 700;
+						font-size: 22px;
+						display: inline-block;
+						margin: 0;
 						margin-left: 10px;
 						position: relative;
 						top: 2px;
@@ -366,6 +371,16 @@ body {
 					max-width: 600px;
 					width: 90%;
 					margin: 0 auto;
+
+					h1 {
+						font-size: 18px;
+
+					}
+					h2 {
+						font-size: 16px;
+						line-height: 1.5em;
+						font-weight: 400;
+					}
 
 				}
 

@@ -74,7 +74,12 @@ body {
           body nav .nav-container .logo a img {
             height: 100%;
             width: auto; }
-          body nav .nav-container .logo a span {
+          body nav .nav-container .logo a h1 {
+            font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            display: inline-block;
+            margin: 0;
             margin-left: 10px;
             position: relative;
             top: 2px; }
@@ -271,6 +276,12 @@ body {
         max-width: 600px;
         width: 90%;
         margin: 0 auto; }
+        body .wrapper .howitworks .feature .desc-wrapper h1 {
+          font-size: 18px; }
+        body .wrapper .howitworks .feature .desc-wrapper h2 {
+          font-size: 16px;
+          line-height: 1.5em;
+          font-weight: 400; }
       body .wrapper .howitworks .feature .screens .screen {
         display: inline-block;
         width: 250px;
