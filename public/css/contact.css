@@ -245,95 +245,97 @@ body {
         position: absolute;
         left: 23px;
         top: 88px; }
-  body .wrapper .affiliates {
-    text-align: center;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    background-color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-    body .wrapper .affiliates ul .affiliate {
-      display: inline-block;
-      height: 75px;
-      width: auto;
-      margin: 30px; }
-      body .wrapper .affiliates ul .affiliate img {
-        height: 100%;
-        width: auto; }
-    body .wrapper .affiliates ul .affiliate.long {
-      height: 40px; }
-  body .wrapper .howitworks {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #F5F7F9;
-    text-align: center;
-    border-bottom: 1px solid #ddd; }
-    body .wrapper .howitworks .feature {
-      padding-top: 25px;
-      padding-bottom: 25px;
-      text-align: center; }
-      body .wrapper .howitworks .feature .desc-wrapper {
-        max-width: 600px;
-        width: 90%;
-        margin: 0 auto; }
-        body .wrapper .howitworks .feature .desc-wrapper h1 {
-          font-size: 18px; }
-        body .wrapper .howitworks .feature .desc-wrapper h2 {
-          font-size: 16px;
-          line-height: 1.5em;
-          font-weight: 400; }
-      body .wrapper .howitworks .feature .screens .screen {
+  body .wrapper {
+    overflow-x: hidden; }
+    body .wrapper .affiliates {
+      text-align: center;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      background-color: #fff;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      body .wrapper .affiliates ul .affiliate {
         display: inline-block;
-        width: 250px;
-        border: 1px solid #d5d9df;
-        box-shadow: -2px 0 10px rgba(188, 190, 202, 0.32);
-        border-radius: 3px;
-        overflow: hidden;
-        margin-right: 20px;
-        margin-top: 20px; }
-        body .wrapper .howitworks .feature .screens .screen img {
-          width: 100%;
-          height: auto; }
-      body .wrapper .howitworks .feature .screens .screen:last-child {
-        margin-right: 0; }
-  body .wrapper .team {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center; }
-    body .wrapper .team .members {
-      margin: 0 auto;
-      max-width: 1000px;
-      padding-top: 20px;
-      padding-bottom: 20px; }
-      body .wrapper .team .members .member {
-        width: 90%;
-        max-width: 300px;
-        margin: 10px;
-        display: inline-block;
-        padding: 20px; }
-        body .wrapper .team .members .member:hover .mask .reg {
-          opacity: 0; }
-        body .wrapper .team .members .member .mask {
-          z-index: 11;
-          position: relative;
-          margin: 0 auto;
-          height: 100px;
-          width: 100px;
+        height: 75px;
+        width: auto;
+        margin: 30px; }
+        body .wrapper .affiliates ul .affiliate img {
+          height: 100%;
+          width: auto; }
+      body .wrapper .affiliates ul .affiliate.long {
+        height: 40px; }
+    body .wrapper .howitworks {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background-color: #F5F7F9;
+      text-align: center;
+      border-bottom: 1px solid #ddd; }
+      body .wrapper .howitworks .feature {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        text-align: center; }
+        body .wrapper .howitworks .feature .desc-wrapper {
+          max-width: 600px;
+          width: 90%;
+          margin: 0 auto; }
+          body .wrapper .howitworks .feature .desc-wrapper h1 {
+            font-size: 18px; }
+          body .wrapper .howitworks .feature .desc-wrapper h2 {
+            font-size: 16px;
+            line-height: 1.5em;
+            font-weight: 400; }
+        body .wrapper .howitworks .feature .screens .screen {
+          display: inline-block;
+          width: 250px;
+          border: 1px solid #d5d9df;
+          box-shadow: -2px 0 10px rgba(188, 190, 202, 0.32);
+          border-radius: 3px;
           overflow: hidden;
-          border-radius: 100%; }
-          body .wrapper .team .members .member .mask img {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
+          margin-right: 20px;
+          margin-top: 20px; }
+          body .wrapper .howitworks .feature .screens .screen img {
             width: 100%;
             height: auto; }
-          body .wrapper .team .members .member .mask img.reg {
-            z-index: 10; }
-          body .wrapper .team .members .member .mask img.wide {
-            width: 120%;
-            height: 100%; }
+        body .wrapper .howitworks .feature .screens .screen:last-child {
+          margin-right: 0; }
+    body .wrapper .team {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      text-align: center; }
+      body .wrapper .team .members {
+        margin: 0 auto;
+        max-width: 1000px;
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        body .wrapper .team .members .member {
+          width: 90%;
+          max-width: 300px;
+          margin: 10px;
+          display: inline-block;
+          padding: 20px; }
+          body .wrapper .team .members .member:hover .mask .reg {
+            opacity: 0; }
+          body .wrapper .team .members .member .mask {
+            z-index: 11;
+            position: relative;
+            margin: 0 auto;
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+            border-radius: 100%; }
+            body .wrapper .team .members .member .mask img {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              width: 100%;
+              height: auto; }
+            body .wrapper .team .members .member .mask img.reg {
+              z-index: 10; }
+            body .wrapper .team .members .member .mask img.wide {
+              width: 120%;
+              height: 100%; }
   body .contact {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
