@@ -259,7 +259,7 @@ body {
 			position: absolute;
 			max-width: 400px;
 			left: 50%;
-			top: 15%;
+			top: 13%;
 			-webkit-transform: translateX(-50%);
 			-moz-transform: translateX(-50%);
 			-o-transform: translateX(-50%);
@@ -269,8 +269,23 @@ body {
 			h1 {
 				text-align: center;
 				@include font($mainfont, 700, 2em, #fff);
-				padding-bottom: 10px;
 				line-height: 1.25em;
+			}
+
+			hr {
+				border: 1px solid #fff;
+				width: 30px;
+				margin: 0 auto;
+				margin-bottom: 15px;
+			}
+
+			h2 {
+				text-align: center;
+				@include font($mainfont, 500, 1.25em, #fff);
+				margin: 0;
+				padding-bottom: 15px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
 			}
 
 			form {
@@ -295,16 +310,16 @@ body {
 			width: 361px;
 			height: auto;
 			margin: 0 auto;
-			-webkit-transform: translateY(42%);
-			-moz-transform: translateY(42%);
-			-o-transform: translateY(42%);
-			transform: translateY(42%);
+			-webkit-transform: translateY(45%);
+			-moz-transform: translateY(45%);
+			-o-transform: translateY(45%);
+			transform: translateY(45%);
 
 			&:hover {
-				-webkit-transform: translateY(39%);
-				-moz-transform: translateY(39%);
-				-o-transform: translateY(39%);
-				transform: translateY(39%);
+				-webkit-transform: translateY(41%);
+				-moz-transform: translateY(41%);
+				-o-transform: translateY(41%);
+				transform: translateY(41%);
 			}
 
 

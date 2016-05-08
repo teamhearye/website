@@ -177,7 +177,7 @@ body {
       position: absolute;
       max-width: 400px;
       left: 50%;
-      top: 15%;
+      top: 13%;
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
       -o-transform: translateX(-50%);
@@ -188,8 +188,22 @@ body {
         font-weight: 700;
         font-size: 2em;
         color: #fff;
-        padding-bottom: 10px;
         line-height: 1.25em; }
+      body header.hero .title-container hr {
+        border: 1px solid #fff;
+        width: 30px;
+        margin: 0 auto;
+        margin-bottom: 15px; }
+      body header.hero .title-container h2 {
+        text-align: center;
+        font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 1.25em;
+        color: #fff;
+        margin: 0;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
       body header.hero .title-container form {
         text-align: center;
         top: 50%;
@@ -227,15 +241,15 @@ body {
       width: 361px;
       height: auto;
       margin: 0 auto;
-      -webkit-transform: translateY(42%);
-      -moz-transform: translateY(42%);
-      -o-transform: translateY(42%);
-      transform: translateY(42%); }
+      -webkit-transform: translateY(45%);
+      -moz-transform: translateY(45%);
+      -o-transform: translateY(45%);
+      transform: translateY(45%); }
       body header.hero .device:hover {
-        -webkit-transform: translateY(39%);
-        -moz-transform: translateY(39%);
-        -o-transform: translateY(39%);
-        transform: translateY(39%); }
+        -webkit-transform: translateY(41%);
+        -moz-transform: translateY(41%);
+        -o-transform: translateY(41%);
+        transform: translateY(41%); }
       body header.hero .device img.device-img {
         width: 100%;
         height: auto; }
