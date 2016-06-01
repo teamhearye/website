@@ -1,15 +1,15 @@
 var featureRight = {
   origin: 'left',
-  delay    : 100,
-  distance : '100px',
+  delay    : 0,
+  distance : '75px',
   easing   : 'ease-in-out',
   scale    : 0.9
 };
 
 var featureLeft = {
   origin: 'right',
-  delay    : 100,
-  distance : '100px',
+  delay    : 0,
+  distance : '75px',
   easing   : 'ease-in-out',
   scale    : 0.9
 };
@@ -18,7 +18,7 @@ var featureLeft = {
 window.sr = ScrollReveal();
 sr.reveal('.explore', featureRight);
 sr.reveal('.tailor', featureLeft);
-sr.reveal('.create', { delay: 200, scale: 0.9 });
+sr.reveal('.create', { delay: 0, scale: 0.9 });
 
 
 // var controller = new ScrollMagic({

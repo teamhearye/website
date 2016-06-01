@@ -109,9 +109,15 @@ body {
 						text-decoration: none;
 					}
 
-					img {
-						height: 100%;
-						width: auto;
+					.logo-container {
+						height: 30px;
+						width: 30px;
+						display: inline-block;
+
+						img {
+							height: 100%;
+							width: auto;
+						}
 					}
 
 					h1 {
@@ -283,7 +289,8 @@ body {
 				text-align: center;
 				@include font($mainfont, 500, 1.25em, #fff);
 				margin: 0;
-				padding-bottom: 15px;
+				padding-top: 5px;
+				padding-bottom: 20px;
 				text-transform: uppercase;
 				letter-spacing: 1px;
 			}
@@ -345,7 +352,7 @@ body {
 			text-align: center;
 			border-top: 1px solid #ddd;
 			border-bottom: 1px solid #ddd;
-			background-color: #fff;
+			background-color: #F5F5F5;
 			padding-top: 10px;
 			padding-bottom: 10px;
 
@@ -373,7 +380,7 @@ body {
 		.howitworks {
 			padding-top: 30px;
 			padding-bottom: 30px;
-			background-color: #F5F7F9;
+			background-color: #fff;
 			text-align: center;
 			border-bottom: 1px solid #ddd;
 
@@ -389,6 +396,8 @@ body {
 
 					h1 {
 						font-size: 18px;
+						color: #FF8343;
+						font-weight: 700;
 
 					}
 					h2 {

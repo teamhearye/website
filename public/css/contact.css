@@ -71,9 +71,13 @@ body {
           display: inline-block; }
           body nav .nav-container .logo a:hover {
             text-decoration: none; }
-          body nav .nav-container .logo a img {
-            height: 100%;
-            width: auto; }
+          body nav .nav-container .logo a .logo-container {
+            height: 30px;
+            width: 30px;
+            display: inline-block; }
+            body nav .nav-container .logo a .logo-container img {
+              height: 100%;
+              width: auto; }
           body nav .nav-container .logo a h1 {
             font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
             font-weight: 700;
@@ -201,7 +205,8 @@ body {
         font-size: 1.25em;
         color: #fff;
         margin: 0;
-        padding-bottom: 15px;
+        padding-top: 5px;
+        padding-bottom: 20px;
         text-transform: uppercase;
         letter-spacing: 1px; }
       body header.hero .title-container form {
@@ -265,7 +270,7 @@ body {
       text-align: center;
       border-top: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
-      background-color: #fff;
+      background-color: #F5F5F5;
       padding-top: 10px;
       padding-bottom: 10px; }
       body .wrapper .affiliates ul .affiliate {
@@ -281,7 +286,7 @@ body {
     body .wrapper .howitworks {
       padding-top: 30px;
       padding-bottom: 30px;
-      background-color: #F5F7F9;
+      background-color: #fff;
       text-align: center;
       border-bottom: 1px solid #ddd; }
       body .wrapper .howitworks .feature {
@@ -293,7 +298,9 @@ body {
           width: 90%;
           margin: 0 auto; }
           body .wrapper .howitworks .feature .desc-wrapper h1 {
-            font-size: 18px; }
+            font-size: 18px;
+            color: #FF8343;
+            font-weight: 700; }
           body .wrapper .howitworks .feature .desc-wrapper h2 {
             font-size: 16px;
             line-height: 1.5em;
